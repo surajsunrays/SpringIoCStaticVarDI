@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Client {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        Car c = (Car) context.getBean(Car.class);
+        Car c = (Car) context.getBean("c");
         String data = c.toString();
         System.out.println(data);
     }

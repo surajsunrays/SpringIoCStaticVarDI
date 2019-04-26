@@ -4,7 +4,7 @@ import com.app.bean.engines.Engine;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component(value = "c")
 public class Car {
     @Autowired
     private Engine engine;
